@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            background-image: url('https://media.istockphoto.com/id/1419766496/photo/abstract-concepts-of-cybersecurity-technology-and-digital-data-protection-protect-internet.webp?b=1&s=170667a&w=0&k=20&c=ymHzOpQBTrldJ5egITZZAgfc7PGmxZ2bP83eo-KjARM=');
+        }
+        .cointainer{
+            margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+        }
+        .cointainer .item{
+            width: 500px;
+            height: 300px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.42);
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .cointainer .item img{
+            width: 400px;
+            height: 200px;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        form button{
+            position: absolute;
+            right: 20px;
+            top:50px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 20px 30px;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+        .button-85 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+  padding: 3em 10em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #514d4ddb;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.getData{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+.button-85{
+    position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+}
+    </style>
+</head>
+<body>
+    <h1>Welcome To Home Page</h1>
+    <form action="/logout" method="post">
+        <button type="submit">Logout</button>
+    </form>
+<button class="button-85" role="button"> <a href="/rockets" class="getData">Get Data</a></button>
+  
+</body>
+</html>

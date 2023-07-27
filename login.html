@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('https://free4kwallpapers.com/uploads/originals/2015/07/18/deep-blue-background.jpg');
+            /* background-color: rgb(179, 234, 230); */
+        }
+        form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(137, 155, 235, 0.361);
+            text-align: center;
+            width: 500px;
+            height: 320px;
+            padding-top: 90px;
+            border-radius: 20px;
+        }
+        .btn {
+            color: white;
+        }
+        form input{
+            font-size: 20px;
+            padding: 20px;
+            width: 300px;
+            border-radius: 20px;
+            border: 1px solid gainsboro;
+            margin-bottom: 20px;
+        }
+        form button{
+            padding: 20px;
+            width: 300px;
+            font-size: 20px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn a{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            color: red;
+        }
+        h1{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+   <h1>Login Here</h1>
+   <form method="post"  action="/login">
+    <input type="text" name="username" placeholder=" Username">
+    <input type="password" name="password" placeholder=" Password">
+    <button type="submit">Login</button>
+    <br>
+    <br>
+    <div class="btn">
+        <span>Don't have account ?</span>
+        <a href="signUp"> Register</a>
+    </div>
+   </form>
+ 
+
+</body>
+</html>
